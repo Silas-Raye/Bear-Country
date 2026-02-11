@@ -173,9 +173,6 @@ async def main():
 		pygame.display.flip()
 		await asyncio.sleep(0)  # allow async tasks to run
 
-	pygame.quit()
-
-
 # Ensure you call main correctly at the bottom of the file
 if __name__ == "__main__":
     asyncio.run(main())
