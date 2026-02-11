@@ -77,11 +77,13 @@ class Player:
             return pygame.transform.flip(img, True, False)
         return img
 
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Bear Country")
+clock = pygame.time.Clock()
+
 async def main():
-	pygame.init()
-	screen = pygame.display.set_mode((WIDTH, HEIGHT))
-	pygame.display.set_caption("Bear Country")
-	clock = pygame.time.Clock()
+	
 	# font for HUD
 	font = pygame.font.Font(None, 20)
 
@@ -177,4 +179,3 @@ async def main():
 # Ensure you call main correctly at the bottom of the file
 if __name__ == "__main__":
     asyncio.run(main())
-	
